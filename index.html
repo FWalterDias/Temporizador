@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/assets/favicon.svg" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Focous Timer</title>
+
+    <script type="module" src="./src/main.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+</head>
+
+<body>
+    <div class="App">
+        <button class="toggle-mode">
+            <span class="sr-only">Ativar Light mode</span>
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+        </button>
+
+        <section class="timer flex">
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+        </section>
+
+        <section class="controls flex">
+            <button data-action="toggleRunning" class="ph ph-play-circle">
+                <span class="sr-only">iniciar contador</span>
+            </button>
+
+            <button data-action="toggleRunning" class="ph ph-pause-circle">
+                <span class="sr-only">pausar contador</span>
+            </button>
+
+            <button data-action="set" class="ph ph-timer secondary">
+                <span class="sr-only">ajustar contador</span>
+            </button>
+
+            <button data-action="reset" class="ph ph-stop-circle secondary">
+                <span class="sr-only">reiniciar contador</span>
+            </button>
+
+            <button data-action="toggleMusic" class="ph ph-speaker-none secondary">
+                <span class="sr-only">iniciar musica</span>
+            </button>
+
+            <button data-action="toggleMusic" class="ph ph-speaker-high">
+                <span class="sr-only">parar musica </span>
+            </button>
+        </section>
+    </div>
+</body>
+
+</html>
